@@ -32,6 +32,15 @@ require 'functions.php';
         Ajouter un formulaire HTML avec un INPUT "age" permettant d'entrer un entier, et un bouton de type "submit"
         1.2
         Récupérer la valeur de l'âge envoyé grâce au formulaire
+        - Récupérer = on prend la valeur et on la met dans une variable facile à réutiliser
+        - $_GET est une variable superglobale, c'est-à-dire que c'est PHP qui la crée,
+        qu'elle existe toujours, avec ou sans formulaire et qu'elle est accessible partout dans notre code
+        - $_GET est toujours un tableau associatif
+        - isset() est une fonction de PHP qui retourne un booléen pour confirmer 
+        - qu'une variable ou une clé dans un tableau existe ou non
+        - On s'en sert ici pour savoir si le paramètre «age» existe dans l'url
+        - S'il existe on affiche la catégorie selon l'âge, sinon on ne fait rien
+        
         1.3
         écrire le script qui indique la catégorie selon $age:
         "Trop jeune" si moins de 6 ans
