@@ -39,20 +39,20 @@
                 // L'affichage du tarif selon $palier reste le même qu'avant
                 $palier = calculDuPalier($age, $anneesPermis, $accidents, $anciennete); ?>
 
-        <p>Votre client à droit au tarif <strong>
-        <?php
-            if ($palier <= 0) {
-                echo 'Refusé';
-            } elseif ($palier == 1) {
-                echo 'Rouge';
-            } elseif ($palier == 2) {
-                echo 'Orange';
-            } elseif ($palier == 3) {
-                echo 'Vert';
-            } else {
-                echo 'Bleu';
-            } ?></strong></p>
-        <?php } ?>
+            <p>Votre client à droit au tarif <strong>
+            <?php
+                if ($palier <= 0) {
+                    echo 'Refusé';
+                } elseif ($palier == 1) {
+                    echo 'Rouge';
+                } elseif ($palier == 2) {
+                    echo 'Orange';
+                } elseif ($palier == 3) {
+                    echo 'Vert';
+                } else {
+                    echo 'Bleu';
+                } ?></strong></p>
+            <?php } ?>
 
         <form method="post">
 			<!-- emmet : (div>(label+input:number))*4 -->
